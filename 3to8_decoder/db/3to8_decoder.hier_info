@@ -1,0 +1,27 @@
+|decoder_3to8
+input[0] => output.IN0
+input[0] => output.IN0
+input[0] => output.IN0
+input[0] => output.IN0
+input[1] => output.IN1
+input[1] => output.IN1
+input[1] => output.IN1
+input[1] => output.IN1
+input[2] => output.IN1
+input[2] => output.IN1
+input[2] => output.IN1
+input[2] => output.IN1
+input[2] => output.IN1
+input[2] => output.IN1
+input[2] => output.IN1
+input[2] => output.IN1
+output[0] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[2] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[3] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[4] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[5] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[6] <= output.DB_MAX_OUTPUT_PORT_TYPE
+output[7] <= output.DB_MAX_OUTPUT_PORT_TYPE
+
+

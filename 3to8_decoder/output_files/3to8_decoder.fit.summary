@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Nov 23 15:52:00 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : 3to8_decoder
+Top-level Entity Name : decoder_3to8
+Family : MAX 10
+Device : 10M25SAE144C8G
+Timing Models : Final
+Total logic elements : 9 / 24,960 ( < 1 % )
+    Total combinational functions : 9 / 24,960 ( < 1 % )
+    Dedicated logic registers : 0 / 24,960 ( 0 % )
+Total registers : 0
+Total pins : 11 / 101 ( 11 % )
+Total virtual pins : 0
+Total memory bits : 0 / 691,200 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 110 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

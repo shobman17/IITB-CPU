@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Wed Nov 23 15:52:08 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : 3to8_decoder
+Top-level Entity Name : decoder_3to8
+Family : MAX 10
+Device : 10M25SAE144C8G
+Power Models : Final
+Total Thermal Power Dissipation : 229.85 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 223.00 mW
+I/O Thermal Power Dissipation : 6.84 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

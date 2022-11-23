@@ -1,0 +1,17 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 125C Model Minimum Pulse Width 'input_vector[0]'
+Slack : -3.000
+TNS   : -25.448
+
+Type  : Slow 1200mV -40C Model Minimum Pulse Width 'input_vector[0]'
+Slack : -3.000
+TNS   : -23.432
+
+Type  : Fast 1200mV -40C Model Minimum Pulse Width 'input_vector[0]'
+Slack : -3.000
+TNS   : -19.432
+
+------------------------------------------------------------

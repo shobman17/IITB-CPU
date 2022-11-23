@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Tue Nov 22 22:33:10 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : Temp_reg3
+Top-level Entity Name : Temp_reg3
+Family : MAX 10
+Total logic elements : 3
+    Total combinational functions : 0
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 8
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

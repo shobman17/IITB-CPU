@@ -1,0 +1,24 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+library Work;
+entity Temp_reg3 is
+	port (input:in std_logic_vector(2 downto 0);
+			w_enable, clk: in std_logic;
+			output: out std_logic_vector(2 downto 0));
+end entity Temp_reg3;
+
+architecture bhv of Temp_reg3_reg is
+	signal storage: std_logic_vector(2 downto 0):="000";
+	begin
+		output(2 downto 0)<= storage(2 downto 0);
+		edit_process: process(clk)
+		begin
+			if(clk='1' and clk'event and w_enable='1') then
+				storage(2 downto 0)<=input(2 downto 0);
+			else
+				storage(2 downto 0)<=storage(2 downto 0);
+			end if;
+		end process;
+end architecture bhv;

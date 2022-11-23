@@ -1,0 +1,11 @@
+|flag_reg
+input[0] => storage[0].DATAIN
+input[1] => storage[1].DATAIN
+w_enable => storage[0].ENA
+w_enable => storage[1].ENA
+clk => storage[0].CLK
+clk => storage[1].CLK
+output[0] <= storage[0].DB_MAX_OUTPUT_PORT_TYPE
+output[1] <= storage[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

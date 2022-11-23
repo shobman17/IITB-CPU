@@ -1,12 +1,12 @@
 vendor_name = ModelSim
-source_file = 1, C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/project/Registers/Programmer register/3to8_decoder.vhd
-source_file = 1, C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/project/Registers/Programmer register/T_reg.vhd
-source_file = 1, C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/project/Registers/Programmer register/prog_reg.vhd
+source_file = 1, C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/Registers/Programmer_register/3to8_decoder.vhd
+source_file = 1, C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/Registers/Programmer_register/T_reg.vhd
+source_file = 1, C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/Registers/Programmer_register/prog_reg.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
 source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
-source_file = 1, C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/project/Registers/Programmer register/db/prog_reg.cbx.xml
+source_file = 1, C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/Registers/Programmer_register/db/prog_reg.cbx.xml
 design_name = hard_block
 design_name = prog_reg
 instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, prog_reg, 1

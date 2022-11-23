@@ -42,31 +42,24 @@ begin
 	reg6: T_reg port map (input => D3, w_enable => e6, clk => clk, output => r6);
 	reg7: T_reg port map (input => D3, w_enable => e7, clk => clk, output => r7);
 	
-	select_process: process(A1, A2)
-	begin
-		-- Assign output for D1
-		case A1 is 
-			when "000" => D1 <= r0;
-			when "001" => D1 <= r1;
-			when "010" => D1 <= r2;
-			when "011" => D1 <= r3;
-			when "100" => D1 <= r4;
-			when "101" => D1 <= r5;
-			when "110" => D1 <= r6;
-			when "111" => D1 <= r7;
-		end case;
-		
-		-- Assign output for D2
-		case A2 is 
-			when "000" => D2 <= r0;
-			when "001" => D2 <= r1;
-			when "010" => D2 <= r2;
-			when "011" => D2 <= r3;
-			when "100" => D2 <= r4;
-			when "101" => D2 <= r5;
-			when "110" => D2 <= r6;
-			when "111" => D2 <= r7;
-		end case;
-	end process;
+	with A1 select
+		D1 <= r0 when "000",
+				r1 when "001",
+				r2 when "010",
+				r3 when "011",
+				r4 when "100",
+				r5 when "101",
+				r6 when "110",
+				r7 when "111";
+	
+	with A2 select
+		D2 <= r0 when "000",
+				r1 when "001",
+				r2 when "010",
+				r3 when "011",
+				r4 when "100",
+				r5 when "101",
+				r6 when "110",
+				r7 when "111";
 end pr;
 	

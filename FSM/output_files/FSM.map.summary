@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Thu Nov 24 18:42:11 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FSM
+Top-level Entity Name : FSM
+Family : MAX 10
+Total logic elements : 43
+    Total combinational functions : 43
+    Dedicated logic registers : 4
+Total registers : 4
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0
+UFM blocks : 0
+ADC blocks : 0

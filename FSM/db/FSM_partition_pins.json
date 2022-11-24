@@ -1,0 +1,97 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "output_state[0]",
+					"strict" : false
+				},
+				{
+					"name" : "output_state[1]",
+					"strict" : false
+				},
+				{
+					"name" : "output_state[2]",
+					"strict" : false
+				},
+				{
+					"name" : "output_state[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[2]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[3]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[0]",
+					"strict" : false
+				},
+				{
+					"name" : "opcode[1]",
+					"strict" : false
+				},
+				{
+					"name" : "z_in",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "c_out",
+					"strict" : false
+				},
+				{
+					"name" : "z_out",
+					"strict" : false
+				},
+				{
+					"name" : "c_i",
+					"strict" : false
+				},
+				{
+					"name" : "z_i",
+					"strict" : false
+				},
+				{
+					"name" : "t1_70[0]",
+					"strict" : false
+				},
+				{
+					"name" : "t1_70[1]",
+					"strict" : false
+				},
+				{
+					"name" : "t1_70[2]",
+					"strict" : false
+				},
+				{
+					"name" : "t1_70[3]",
+					"strict" : false
+				},
+				{
+					"name" : "t1_70[4]",
+					"strict" : false
+				},
+				{
+					"name" : "t1_70[5]",
+					"strict" : false
+				},
+				{
+					"name" : "t1_70[6]",
+					"strict" : false
+				},
+				{
+					"name" : "t1_70[7]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

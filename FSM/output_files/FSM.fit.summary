@@ -1,0 +1,18 @@
+Fitter Status : Successful - Thu Nov 24 18:42:22 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : FSM
+Top-level Entity Name : FSM
+Family : MAX 10
+Device : 10M08DAF484C8G
+Timing Models : Final
+Total logic elements : 44 / 8,064 ( < 1 % )
+    Total combinational functions : 44 / 8,064 ( < 1 % )
+    Dedicated logic registers : 4 / 8,064 ( < 1 % )
+Total registers : 4
+Total pins : 22 / 250 ( 9 % )
+Total virtual pins : 0
+Total memory bits : 0 / 387,072 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 48 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )

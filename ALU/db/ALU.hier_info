@@ -1,0 +1,349 @@
+|DUT
+input_vector[0] => ALU:add_instance.ALU_SELECT[0]
+input_vector[1] => ALU:add_instance.ALU_SELECT[1]
+input_vector[2] => ALU:add_instance.ALU_B[0]
+input_vector[3] => ALU:add_instance.ALU_B[1]
+input_vector[4] => ALU:add_instance.ALU_B[2]
+input_vector[5] => ALU:add_instance.ALU_B[3]
+input_vector[6] => ALU:add_instance.ALU_B[4]
+input_vector[7] => ALU:add_instance.ALU_B[5]
+input_vector[8] => ALU:add_instance.ALU_B[6]
+input_vector[9] => ALU:add_instance.ALU_B[7]
+input_vector[10] => ALU:add_instance.ALU_B[8]
+input_vector[11] => ALU:add_instance.ALU_B[9]
+input_vector[12] => ALU:add_instance.ALU_B[10]
+input_vector[13] => ALU:add_instance.ALU_B[11]
+input_vector[14] => ALU:add_instance.ALU_B[12]
+input_vector[15] => ALU:add_instance.ALU_B[13]
+input_vector[16] => ALU:add_instance.ALU_B[14]
+input_vector[17] => ALU:add_instance.ALU_B[15]
+input_vector[18] => ALU:add_instance.ALU_A[0]
+input_vector[19] => ALU:add_instance.ALU_A[1]
+input_vector[20] => ALU:add_instance.ALU_A[2]
+input_vector[21] => ALU:add_instance.ALU_A[3]
+input_vector[22] => ALU:add_instance.ALU_A[4]
+input_vector[23] => ALU:add_instance.ALU_A[5]
+input_vector[24] => ALU:add_instance.ALU_A[6]
+input_vector[25] => ALU:add_instance.ALU_A[7]
+input_vector[26] => ALU:add_instance.ALU_A[8]
+input_vector[27] => ALU:add_instance.ALU_A[9]
+input_vector[28] => ALU:add_instance.ALU_A[10]
+input_vector[29] => ALU:add_instance.ALU_A[11]
+input_vector[30] => ALU:add_instance.ALU_A[12]
+input_vector[31] => ALU:add_instance.ALU_A[13]
+input_vector[32] => ALU:add_instance.ALU_A[14]
+input_vector[33] => ALU:add_instance.ALU_A[15]
+output_vector[0] << ALU:add_instance.C_O
+output_vector[1] << ALU:add_instance.Z_O
+output_vector[2] << ALU:add_instance.ALU_C[0]
+output_vector[3] << ALU:add_instance.ALU_C[1]
+output_vector[4] << ALU:add_instance.ALU_C[2]
+output_vector[5] << ALU:add_instance.ALU_C[3]
+output_vector[6] << ALU:add_instance.ALU_C[4]
+output_vector[7] << ALU:add_instance.ALU_C[5]
+output_vector[8] << ALU:add_instance.ALU_C[6]
+output_vector[9] << ALU:add_instance.ALU_C[7]
+output_vector[10] << ALU:add_instance.ALU_C[8]
+output_vector[11] << ALU:add_instance.ALU_C[9]
+output_vector[12] << ALU:add_instance.ALU_C[10]
+output_vector[13] << ALU:add_instance.ALU_C[11]
+output_vector[14] << ALU:add_instance.ALU_C[12]
+output_vector[15] << ALU:add_instance.ALU_C[13]
+output_vector[16] << ALU:add_instance.ALU_C[14]
+output_vector[17] << ALU:add_instance.ALU_C[15]
+
+
+|DUT|ALU:add_instance
+ALU_A[0] => ALU_unit_cell:unit_cell_generate:0:unit.A
+ALU_A[1] => ALU_unit_cell:unit_cell_generate:1:unit.A
+ALU_A[2] => ALU_unit_cell:unit_cell_generate:2:unit.A
+ALU_A[3] => ALU_unit_cell:unit_cell_generate:3:unit.A
+ALU_A[4] => ALU_unit_cell:unit_cell_generate:4:unit.A
+ALU_A[5] => ALU_unit_cell:unit_cell_generate:5:unit.A
+ALU_A[6] => ALU_unit_cell:unit_cell_generate:6:unit.A
+ALU_A[7] => ALU_unit_cell:unit_cell_generate:7:unit.A
+ALU_A[8] => ALU_unit_cell:unit_cell_generate:8:unit.A
+ALU_A[9] => ALU_unit_cell:unit_cell_generate:9:unit.A
+ALU_A[10] => ALU_unit_cell:unit_cell_generate:10:unit.A
+ALU_A[11] => ALU_unit_cell:unit_cell_generate:11:unit.A
+ALU_A[12] => ALU_unit_cell:unit_cell_generate:12:unit.A
+ALU_A[13] => ALU_unit_cell:unit_cell_generate:13:unit.A
+ALU_A[14] => ALU_unit_cell:unit_cell_generate:14:unit.A
+ALU_A[15] => ALU_unit_cell:unit_cell_generate:15:unit.A
+ALU_B[0] => ALU_unit_cell:unit_cell_generate:0:unit.B
+ALU_B[1] => ALU_unit_cell:unit_cell_generate:1:unit.B
+ALU_B[2] => ALU_unit_cell:unit_cell_generate:2:unit.B
+ALU_B[3] => ALU_unit_cell:unit_cell_generate:3:unit.B
+ALU_B[4] => ALU_unit_cell:unit_cell_generate:4:unit.B
+ALU_B[5] => ALU_unit_cell:unit_cell_generate:5:unit.B
+ALU_B[6] => ALU_unit_cell:unit_cell_generate:6:unit.B
+ALU_B[7] => ALU_unit_cell:unit_cell_generate:7:unit.B
+ALU_B[8] => ALU_unit_cell:unit_cell_generate:8:unit.B
+ALU_B[9] => ALU_unit_cell:unit_cell_generate:9:unit.B
+ALU_B[10] => ALU_unit_cell:unit_cell_generate:10:unit.B
+ALU_B[11] => ALU_unit_cell:unit_cell_generate:11:unit.B
+ALU_B[12] => ALU_unit_cell:unit_cell_generate:12:unit.B
+ALU_B[13] => ALU_unit_cell:unit_cell_generate:13:unit.B
+ALU_B[14] => ALU_unit_cell:unit_cell_generate:14:unit.B
+ALU_B[15] => ALU_unit_cell:unit_cell_generate:15:unit.B
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:0:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:0:unit.C
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:1:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:2:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:3:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:4:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:5:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:6:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:7:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:8:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:9:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:10:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:11:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:12:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:13:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:14:unit.s0
+ALU_SELECT[0] => ALU_unit_cell:unit_cell_generate:15:unit.s0
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:0:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:1:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:2:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:3:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:4:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:5:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:6:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:7:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:8:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:9:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:10:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:11:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:12:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:13:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:14:unit.s1
+ALU_SELECT[1] => ALU_unit_cell:unit_cell_generate:15:unit.s1
+ALU_C[0] <= ALU_unit_cell:unit_cell_generate:0:unit.out_s
+ALU_C[1] <= ALU_unit_cell:unit_cell_generate:1:unit.out_s
+ALU_C[2] <= ALU_unit_cell:unit_cell_generate:2:unit.out_s
+ALU_C[3] <= ALU_unit_cell:unit_cell_generate:3:unit.out_s
+ALU_C[4] <= ALU_unit_cell:unit_cell_generate:4:unit.out_s
+ALU_C[5] <= ALU_unit_cell:unit_cell_generate:5:unit.out_s
+ALU_C[6] <= ALU_unit_cell:unit_cell_generate:6:unit.out_s
+ALU_C[7] <= ALU_unit_cell:unit_cell_generate:7:unit.out_s
+ALU_C[8] <= ALU_unit_cell:unit_cell_generate:8:unit.out_s
+ALU_C[9] <= ALU_unit_cell:unit_cell_generate:9:unit.out_s
+ALU_C[10] <= ALU_unit_cell:unit_cell_generate:10:unit.out_s
+ALU_C[11] <= ALU_unit_cell:unit_cell_generate:11:unit.out_s
+ALU_C[12] <= ALU_unit_cell:unit_cell_generate:12:unit.out_s
+ALU_C[13] <= ALU_unit_cell:unit_cell_generate:13:unit.out_s
+ALU_C[14] <= ALU_unit_cell:unit_cell_generate:14:unit.out_s
+ALU_C[15] <= ALU_unit_cell:unit_cell_generate:15:unit.out_s
+Z_O <= Z_O.DB_MAX_OUTPUT_PORT_TYPE
+C_O <= ALU_unit_cell:unit_cell_generate:15:unit.out_c
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:0:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:1:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:2:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:3:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:4:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:5:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:6:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:7:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:8:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:9:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:10:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:11:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:12:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:13:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:14:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|ALU:add_instance|ALU_unit_cell:\unit_cell_generate:15:unit
+A => axb.IN1
+A => out1.IN1
+B => sxb.IN0
+C => out0.IN1
+C => out_c.IN1
+s0 => sxb.IN1
+s1 => out_s.IN1
+s1 => out_s.IN1
+out_c <= out_c.DB_MAX_OUTPUT_PORT_TYPE
+out_s <= out_s.DB_MAX_OUTPUT_PORT_TYPE
+
+

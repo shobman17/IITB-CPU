@@ -1,0 +1,175 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/simulation/modelsim
+Ealu
+Z1 w1669299534
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/ALU.vhd
+Z5 FC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/ALU.vhd
+l0
+L38 1
+VnjI^1DJS655KXj`NXnN^c0
+!s100 zNQOXaj@`R2_8OR>EHW]U1
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1669301070
+!i10b 1
+Z8 !s108 1669301070.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/ALU.vhd|
+Z10 !s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/ALU.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aaddsubnand
+R2
+R3
+DEx4 work 3 alu 0 22 njI^1DJS655KXj`NXnN^c0
+!i122 1
+l58
+L46 25
+VdA^5JX3:>JRKOH7Ldknka1
+!s100 [<C8^`Fl[:oW[c:Bj[;=U1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ealu_unit_cell
+R1
+R2
+R3
+!i122 1
+R0
+R4
+R5
+l0
+L4 1
+VZL`82TdJ;ndiiNj?7]fc72
+!s100 h6BK>DK62_>WdI_3dKVXZ0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aunit
+R2
+R3
+DEx4 work 13 alu_unit_cell 0 22 ZL`82TdJ;ndiiNj?7]fc72
+!i122 1
+l14
+L11 23
+VBDTa12^U:`Z9DZQ;flC_V2
+!s100 b;J:@j`0AK8^6egb=S=mN1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1669295307
+R2
+R3
+!i122 0
+R0
+Z14 8C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/DUT.vhdl
+Z15 FC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/DUT.vhdl
+l0
+L7 1
+V0aRUSm1=5[>j?IZRRm1<a0
+!s100 NT^VZCJLj1ggA2PTj=O?P3
+R6
+31
+Z16 !s110 1669301069
+!i10b 1
+Z17 !s108 1669301069.000000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/DUT.vhdl|
+Z19 !s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/DUT.vhdl|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 0aRUSm1=5[>j?IZRRm1<a0
+!i122 0
+l19
+L12 22
+V?87WU[MCzgbB5c:jijmRN2
+!s100 UFF9SEmCdAOFF?EmM]_9[0
+R6
+31
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 1
+R11
+R12
+Etestbench
+Z20 w1669295319
+R3
+R2
+!i122 2
+R0
+Z21 8C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/Testbench.vhdl
+Z22 FC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/Testbench.vhdl|
+!s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+VA6a6ZI8z6=oH@_Zhz3Tld2
+!s100 [<YnFzG_k6S6`QlQ=cZ?23
+R6
+31
+R7
+!i10b 1
+R8
+R23
+Z24 !s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/ALU/Testbench.vhdl|
+!i113 1
+R11
+R12

@@ -332,6 +332,8 @@ architecture trivial of DataPath is
 					alu_b<="0000000000000001";
 					d3<=alu_out;
 					a3<="111";
+					opcode<=m_out(15 downto 12);
+
 					
 					--Control Signals
 					r_wr<='1';
@@ -354,6 +356,8 @@ architecture trivial of DataPath is
 					s2_0<=d1;
 					s3_0<=d2;
 					s6_0<=s1_7;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='0';
@@ -375,6 +379,8 @@ architecture trivial of DataPath is
 					alu_b<=s3_1;
 					s4_0<=alu_out;
 					--aluz, aluc are implicit
+					opcode<=s1_4;
+
 					
 					--Control Signal
 					r_wr<='0';
@@ -395,6 +401,8 @@ architecture trivial of DataPath is
 					--Data Flow
 					d3<=s4_1;
 					a3<=s6_1;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='1';
@@ -417,6 +425,8 @@ architecture trivial of DataPath is
 					--se6_in is implicit
 					s3_0<=se6_out;
 					s6_0<=s1_6;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='0';
@@ -442,6 +452,8 @@ architecture trivial of DataPath is
 					s4_0<=alu_out;
 					a1<=s1_5;
 					s2_0<=d1;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='0';
@@ -461,6 +473,8 @@ architecture trivial of DataPath is
 					--Data Flow
 					m_a<=s4_1;
 					s4_0<=m_out;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='0';
@@ -480,6 +494,8 @@ architecture trivial of DataPath is
 					--Data Flow
 					m_in<=s2_1;
 					m_a<=s4_1;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='0';
@@ -500,6 +516,8 @@ architecture trivial of DataPath is
 					--lshift_in is implicit
 					s4_0<=L7_out;
 					s6_0<=s1_5;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='0';
@@ -522,6 +540,8 @@ architecture trivial of DataPath is
 					alu_a<=se6_out;
 					d3<=alu_out;
 					a3<="111";
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='1';
@@ -541,6 +561,8 @@ architecture trivial of DataPath is
 					--Data Flow
 					a3<=s1_5;
 					d3<=s5_1;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='1';
@@ -561,6 +583,8 @@ architecture trivial of DataPath is
 					a2<=s1_6;
 					d3<=d2;
 					a3<="111";
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='1';
@@ -588,6 +612,8 @@ architecture trivial of DataPath is
 					alu_a<=s2_1;
 					alu_b<="0000000000000001";
 					s2_0<=alu_out;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='1';
@@ -608,6 +634,8 @@ architecture trivial of DataPath is
 					alu_a<=s1_10;
 					alu_b<=s3_1;
 					s1_0<=alu_out;
+					opcode<=s1_4;
+
 					
 					--Control Signals
 					r_wr<='0';
@@ -635,6 +663,7 @@ architecture trivial of DataPath is
 					alu_a<=s2_1;
 					alu_b<="0000000000000001";
 					s2_0<=alu_out;
+					opcode<=s1_4;
 					
 					--Control Signals
 					r_wr<='0';
@@ -651,6 +680,7 @@ architecture trivial of DataPath is
 					alu_ctrl<="00";
 					
 				when others =>
+					opcode<=s1_4;
 					--Control Signals
 					r_wr<='0';
 					m_wr<='0';
@@ -668,7 +698,6 @@ architecture trivial of DataPath is
 		end process;
 		
 		t17downto0<=s1_3;
-		opcode<=s1_4;
 		out_c_out<=c_out;
 		out_z_in<=z_in;
 		out_z_out<=z_out;

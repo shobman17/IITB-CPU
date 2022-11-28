@@ -401,7 +401,7 @@ architecture pr of prog_reg is --unfortunately, for testing purposes, I had to r
 --				r7 when others;
 --end pr;
 	type reg_array is array(7 downto 0) of std_logic_vector(15 downto 0);
-		signal prog_storage : reg_array := (0=>"1100001001100011", 1=>"1110000000000000", 2=>"0000110000000000", 4=>"0110011001001000", 5=>"0010110101011001", 6=>"0110001111011001", others => "0000000000000000");  
+		signal prog_storage : reg_array := (0=>"1100001001100011", 1=>"1110000000000000", 2=>"0000110000000000", 3=>"0011110001111001", 4=>"0110011001001000", 5=>"0010110101011001", 6=>"0110001111011001", others => "0000000000000000");  
 	
 begin
 	
@@ -535,12 +535,16 @@ end entity;
 
 architecture memorykakaam of Memory is 
 		type mem_vec is array(65535 downto 0) of std_logic_vector(15 downto 0);
-		signal memorykagyaan : mem_vec := (0=> "0000001010100000", 1=>"0000001000110000", 2=>"0000001100101010", 3=>"0000011001111001", 4=>"0010011001010000", others => "0000000000000000");  
+		signal memorykagyaan : mem_vec := (0=> "0000001010100000", 1=>"0000001000110000", 2=>"0000001100101010", 3=>"0000011001111001", 4=>"0010011001010000", 5=>"0010111110010001", 6=>"0010101001010010", 7=>"0001001010010000", others => "0000000000000000");  
 		--0 has ADD R1 R2 R4
 		--1 has ADD R1 R0 R6
 		--2 has ADC R1 R4 R5
 		--3 has ADZ R3 R1 R7
 		--4 has NDU R3 R1 R2
+		--5 has NDZ R7 R6 R2
+		--6 has NDC R5 R1 R2
+		--7 has ADI R1 R2 010000
+		--8 has LHI R1 110000110
 	
 begin
 

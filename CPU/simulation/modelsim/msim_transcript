@@ -1,0 +1,170 @@
+# Reading pref.tcl
+# do CPU_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/aryav/Desktop/CPU/Gates.vhdl}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:23:24 on Nov 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/CPU/Gates.vhdl 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Gates
+# -- Compiling entity INVERTER
+# -- Compiling architecture Equations of INVERTER
+# -- Compiling entity AND_2
+# -- Compiling architecture Equations of AND_2
+# -- Compiling entity NAND_2
+# -- Compiling architecture Equations of NAND_2
+# -- Compiling entity OR_2
+# -- Compiling architecture Equations of OR_2
+# -- Compiling entity NOR_2
+# -- Compiling architecture Equations of NOR_2
+# -- Compiling entity XOR_2
+# -- Compiling architecture Equations of XOR_2
+# -- Compiling entity XNOR_2
+# -- Compiling architecture Equations of XNOR_2
+# -- Compiling entity HALF_ADDER
+# -- Compiling architecture Equations of HALF_ADDER
+# End time: 14:23:24 on Nov 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/aryav/Desktop/CPU/Components.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:23:24 on Nov 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/CPU/Components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package Components
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Temp_reg3
+# -- Compiling architecture bhv of Temp_reg3
+# -- Compiling entity T_reg
+# -- Compiling architecture bhv of T_reg
+# -- Compiling entity flag_reg
+# -- Compiling architecture bhv of flag_reg
+# -- Loading package Gates
+# -- Compiling entity DEMUX_4
+# -- Compiling architecture struct of DEMUX_4
+# -- Compiling entity ALU_unit_cell
+# -- Compiling architecture unit of ALU_unit_cell
+# -- Compiling entity ALU
+# -- Compiling architecture addsubnand of ALU
+# -- Compiling entity T1_reg
+# -- Compiling architecture bhv of T1_reg
+# -- Compiling entity prog_reg
+# -- Compiling architecture pr of prog_reg
+# -- Compiling entity Priority
+# -- Compiling architecture bhv of Priority
+# -- Compiling entity decoder_3to8
+# -- Compiling architecture dec of decoder_3to8
+# -- Compiling entity Lshifter7
+# -- Compiling architecture sidehoja of Lshifter7
+# -- Compiling entity extender8
+# -- Compiling architecture sidehojana of extender8
+# -- Compiling entity signed_extender
+# -- Compiling architecture ext of signed_extender
+# -- Compiling entity Memory
+# -- Compiling architecture memorykakaam of Memory
+# End time: 14:23:24 on Nov 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/aryav/Desktop/CPU/CPU.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:23:24 on Nov 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/CPU/CPU.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity FSM
+# -- Compiling architecture shatranj of FSM
+# -- Loading package Components
+# -- Compiling entity DataPath
+# -- Compiling architecture trivial of DataPath
+# -- Loading entity T1_reg
+# -- Loading entity T_reg
+# -- Loading entity Temp_reg3
+# -- Loading entity flag_reg
+# -- Loading entity Priority
+# -- Loading entity decoder_3to8
+# -- Loading entity Lshifter7
+# -- Loading entity extender8
+# -- Loading entity ALU
+# -- Loading entity prog_reg
+# -- Loading entity Memory
+# -- Compiling entity CPU
+# -- Compiling architecture completete of CPU
+# -- Loading entity DataPath
+# -- Loading entity FSM
+# End time: 14:23:24 on Nov 28,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/aryav/Desktop/CPU/CPU_tb.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 14:23:24 on Nov 28,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/CPU/CPU_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity CPU_tb
+# -- Compiling architecture bhv of CPU_tb
+# End time: 14:23:25 on Nov 28,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  CPU_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" CPU_tb 
+# Start time: 14:23:25 on Nov 28,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cpu_tb(bhv)
+# Loading work.components
+# Loading ieee.numeric_std(body)
+# Loading work.cpu(completete)
+# Loading work.datapath(trivial)
+# Loading work.t1_reg(bhv)
+# Loading work.t_reg(bhv)
+# Loading work.temp_reg3(bhv)
+# Loading work.flag_reg(bhv)
+# Loading work.prog_reg(pr)
+# Loading work.priority(bhv)
+# Loading work.decoder_3to8(dec)
+# Loading work.extender8(sidehojana)
+# Loading work.lshifter7(sidehoja)
+# Loading work.signed_extender(ext)
+# Loading work.memory(memorykakaam)
+# Loading work.alu(addsubnand)
+# Loading work.alu_unit_cell(unit)
+# Loading work.fsm(shatranj)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position end  sim:/cpu_tb/dut_instance/Main_Data/reg_file/prog_storage
+add wave -position end  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_C
+add wave -position 3  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_B
+add wave -position 3  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_A
+add wave -position 3  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_SELECT
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 15:06:09 on Nov 28,2022, Elapsed time: 0:42:44
+# Errors: 0, Warnings: 0

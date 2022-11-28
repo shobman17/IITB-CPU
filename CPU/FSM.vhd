@@ -1,0 +1,175 @@
+library std;
+use std.standard.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all; 
+
+entity FSM is 
+	port( opcode:in std_logic_vector(3 downto 0);
+			t1_70:in std_logic_vector(7 downto 0);
+			c_i, z_i, z_in, c_out, z_out:in std_logic;
+			clk:in std_logic;
+			output_state: out std_logic_vector(3 downto 0)
+		 );
+end entity;
+
+architecture shatranj of FSM is
+
+
+--Represents id for each state we we using
+constant s1  : std_logic_vector(3 downto 0):= "0001";  
+constant s2  : std_logic_vector(3 downto 0):= "0010";
+constant s3  : std_logic_vector(3 downto 0):= "0011";
+constant s4  : std_logic_vector(3 downto 0):= "0100";
+constant s5  : std_logic_vector(3 downto 0):= "0101";
+constant s6  : std_logic_vector(3 downto 0):= "0110";
+constant s7  : std_logic_vector(3 downto 0):= "0111";
+constant s8  : std_logic_vector(3 downto 0):= "1000";
+constant s9  : std_logic_vector(3 downto 0):= "1001";  
+constant s10 : std_logic_vector(3 downto 0):= "1010";
+constant s11 : std_logic_vector(3 downto 0):= "1011";
+constant s12 : std_logic_vector(3 downto 0):= "1100";
+constant s13 : std_logic_vector(3 downto 0):= "1101";
+constant s14 : std_logic_vector(3 downto 0):= "1110";
+constant s15 : std_logic_vector(3 downto 0):= "1111";
+
+----Signals which represent present and next state id
+signal y_present: std_logic_vector(3 downto 0) :=s1;
+signal y_next: std_logic_vector(3 downto 0) :=s1;
+
+begin
+		output_state <= y_present;
+		
+	Moveon: process(clk)
+	
+	begin
+			if(rising_edge(clk)) then
+				y_present <= y_next;
+			end if;
+			
+	end process;
+
+	next_state:process(y_present,opcode)
+   begin
+		case y_present is
+		
+			when s1=>
+				case opcode is
+					when "0001" =>		--adi
+						y_next<=s5;   
+					when "0100" | "0101" =>      --lw/sw
+						y_next<=s6;
+					when "1000" =>		--jal
+						y_next<=s10;   
+					when "0011" =>		--lhi
+						y_next<=s9;	    
+					when "1001" =>   --jlr
+						y_next<=s11;   
+					when others =>
+						y_next<=s2;
+				end case;
+				
+			when s2=>
+				case opcode is
+					when "0000" | "0010" =>  	--add/adc/adz/ndu/ndc/ndz	
+						if (((not(c_i and z_i)) or (c_i and c_out) or (z_i and z_out))='1') then
+							y_next<=s3;
+						else
+							y_next<=s1;
+						end if;
+					when "1100" => --beq
+						y_next<=s3;
+					when "0110" => --lm
+						y_next<=s13;
+					when "0111" => --sm
+						y_next<=s14;
+					when others =>
+						y_next <= s1;
+				end case;			
+				
+			when s3=>
+				case opcode is
+					when "0001" | "0010" | "0011" =>  --
+						y_next<=s4;
+					when "1100" =>      --beq
+						if ( z_in='1') then
+							y_next<=s10;
+						else
+							y_next<=s1;
+						end if;
+					when others =>
+						y_next <= s1;
+				end case;
+				
+			when s4=> --last
+				y_next<=s1;
+				
+			when s5=> --adi
+				y_next<=s3;
+				
+			when s6=>
+				case opcode is
+					when "0100" =>  --lw
+						y_next<=s7;
+					when "0101" =>  --sw
+						y_next<=s8;
+					when others =>
+						y_next <= s1;
+				end case;
+				
+			when s7=> --lw
+				y_next<=s4;
+				
+			when s8=> --last
+				y_next<=s1;
+				
+			when s9=> --lhi
+				y_next<=s4;
+				
+			when s10=>
+				if (opcode="1000") then --jal
+					y_next<=s11;
+				else 
+					y_next<=s1;
+				end if;
+			
+			when s11=>
+				if (opcode="1001") then --jlr
+					y_next<=s12;
+				else 
+					y_next<=s1;
+				end if;
+				
+			when s12=> --last
+				y_next<=s1;
+				
+			when s13=> --lm
+				y_next<=s14;
+				
+			when s14=> 
+				case opcode is
+					when "0110" =>  --lm
+						if (t1_70 = "00000000") then
+							y_next<=s1;
+						else 
+							y_next<=s13;
+						end if;
+					when "0111" =>  --lm
+						if (t1_70 = "00000000") then
+							y_next<=s1;
+						else 
+							y_next<=s15;
+						end if;
+					when others =>
+						y_next <= s1;
+				end case;
+				
+			when s15=>
+				y_next<=s14;
+				
+			when others=>
+				y_next<=s1;
+				
+end case;
+end process;
+end architecture;

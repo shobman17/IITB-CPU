@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/aryav/Desktop/CPU/Gates.vhdl
+source_file = 1, C:/Users/aryav/Desktop/CPU/Components.vhd
+source_file = 1, C:/Users/aryav/Desktop/CPU/CPU.vhd
+source_file = 1, C:/Users/aryav/Desktop/CPU/CPU_tb.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/aryav/Desktop/CPU/db/CPU.cbx.xml
+design_name = hard_block
+design_name = CPU
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, CPU, 1
+instance = comp, \clk~input\, clk~input, CPU, 1
+instance = comp, \~QUARTUS_CREATED_UNVM~\, ~QUARTUS_CREATED_UNVM~, CPU, 1
+instance = comp, \~QUARTUS_CREATED_ADC1~\, ~QUARTUS_CREATED_ADC1~, CPU, 1
+instance = comp, \~QUARTUS_CREATED_ADC2~\, ~QUARTUS_CREATED_ADC2~, CPU, 1

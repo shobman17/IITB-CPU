@@ -1,0 +1,8 @@
+entity CPU is 
+	port(reset, clk: in std_logic;
+		);
+end entity;
+
+architecture completete of CPU is
+	begin
+end architecture;

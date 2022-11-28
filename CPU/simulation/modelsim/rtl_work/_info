@@ -8,26 +8,26 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/aryav/Desktop/CPU/simulation/modelsim
+Z0 dC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/simulation/modelsim
 Ealu
-Z1 w1669578400
+Z1 w1669628371
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 !i122 1
 R0
-Z4 8C:/Users/aryav/Desktop/CPU/Components.vhd
-Z5 FC:/Users/aryav/Desktop/CPU/Components.vhd
+Z4 8C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd
+Z5 FC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd
 l0
 L253 1
 Vc9VAm;_?^>>fAgW2H7VE11
 !s100 BNljL<LP0;:DBjF^LeNV]1
 Z6 OV;C;2020.1;71
 31
-Z7 !s110 1669625604
+Z7 !s110 1669628976
 !i10b 1
-Z8 !s108 1669625604.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/CPU/Components.vhd|
-Z10 !s107 C:/Users/aryav/Desktop/CPU/Components.vhd|
+Z8 !s108 1669628975.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd|
+Z10 !s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd|
 !i113 1
 Z11 o-93 -work work
 Z12 tExplicit 1 CvgOpt 0
@@ -92,24 +92,24 @@ R10
 R11
 R12
 Eand_2
-Z14 w1669140323
+R1
 R2
 R3
 !i122 0
 R0
-Z15 8C:/Users/aryav/Desktop/CPU/Gates.vhdl
-Z16 FC:/Users/aryav/Desktop/CPU/Gates.vhdl
+Z14 8C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Gates.vhdl
+Z15 FC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Gates.vhdl
 l0
 L58 1
 V]RG07MbPYi[V0Ao39m6:j2
 !s100 UzW`<RPU]A1l35?BD`S?:2
 R6
 31
-R7
+Z16 !s110 1669628975
 !i10b 1
 R8
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/CPU/Gates.vhdl|
-Z18 !s107 C:/Users/aryav/Desktop/CPU/Gates.vhdl|
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Gates.vhdl|
+Z18 !s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Gates.vhdl|
 !i113 1
 R11
 R12
@@ -124,7 +124,7 @@ Vn2W3gnTbmM6RL<12A4kQo3
 !s100 UGcFAa2CFfL9bz[94MAkA0
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -146,7 +146,7 @@ VT0zn2@zodA^VobKLA?0G13
 !s100 hCOAzI6;=9;lbWnRC_k0g0
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R9
@@ -155,70 +155,70 @@ R10
 R11
 R12
 Ecpu
-Z19 w1669579576
+Z19 w1669628724
 Z20 DPx4 work 10 components 0 22 T0zn2@zodA^VobKLA?0G13
 R2
 R3
 !i122 2
 R0
-Z21 8C:/Users/aryav/Desktop/CPU/CPU.vhd
-Z22 FC:/Users/aryav/Desktop/CPU/CPU.vhd
+Z21 8C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd
+Z22 FC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd
 l0
-L685 1
-VMoaQGILUURVFC=k6HE:FW1
-!s100 GbcQihok]8V6i>J4K_I2f2
+L686 1
+VB<zO`3=D]J2eAY34zWTn=1
+!s100 2Cn]SfD<fPIJD0Z=ULT5l1
 R6
 31
 R7
 !i10b 1
-R8
-Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/CPU/CPU.vhd|
-Z24 !s107 C:/Users/aryav/Desktop/CPU/CPU.vhd|
+Z23 !s108 1669628976.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd|
+Z25 !s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd|
 !i113 1
 R11
 R12
 Acompletete
-Z25 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z26 DEx4 work 3 fsm 0 22 RTPjG1KUS<F5hT^BTL]]:0
-Z27 DEx4 work 8 datapath 0 22 _21F[C85:HNZno7d8j0Eo3
+Z26 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z27 DEx4 work 3 fsm 0 22 RTPjG1KUS<F5hT^BTL]]:0
+Z28 DEx4 work 8 datapath 0 22 _21F[C85:HNZno7d8j0Eo3
 R20
 R2
 R3
-DEx4 work 3 cpu 0 22 MoaQGILUURVFC=k6HE:FW1
+DEx4 work 3 cpu 0 22 B<zO`3=D]J2eAY34zWTn=1
 !i122 2
-l716
-L689 34
-Vnm5hKfkFGhY8:j^zLe>252
-!s100 jlDNJI9CE>g=Q:C08=bPV1
+l717
+L690 34
+VeC1=oR>dP5`Ge6cQbaBEX3
+!s100 0@WG5c6WfSGDG<S<WSmjD3
 R6
 31
 R7
 !i10b 1
-R8
 R23
 R24
+R25
 !i113 1
 R11
 R12
 Ecpu_tb
-Z28 w1669557952
+R1
 R2
 R3
 !i122 3
 R0
-Z29 8C:/Users/aryav/Desktop/CPU/CPU_tb.vhd
-Z30 FC:/Users/aryav/Desktop/CPU/CPU_tb.vhd
+Z29 8C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU_tb.vhd
+Z30 FC:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU_tb.vhd
 l0
 L4 1
 Vc]T75gd>dODaa7cRjOOP61
 !s100 LHDX5HZbGNL70L7E1OY;R0
 R6
 31
-Z31 !s110 1669625605
+R7
 !i10b 1
-R8
-Z32 !s90 -reportprogress|300|-93|-work|work|C:/Users/aryav/Desktop/CPU/CPU_tb.vhd|
-!s107 C:/Users/aryav/Desktop/CPU/CPU_tb.vhd|
+R23
+Z31 !s90 -reportprogress|300|-93|-work|work|C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU_tb.vhd|
+!s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU_tb.vhd|
 !i113 1
 R11
 R12
@@ -233,11 +233,11 @@ V9;d[lFYf@:W_9R>SHY8zk2
 !s100 Hm@UQRdcSajkaR7OimYd31
 R6
 31
-R31
+R7
 !i10b 1
-R8
-R32
-Z33 !s107 C:/Users/aryav/Desktop/CPU/CPU_tb.vhd|
+R23
+R31
+Z32 !s107 C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU_tb.vhd|
 !i113 1
 R11
 R12
@@ -258,41 +258,41 @@ R6
 31
 R7
 !i10b 1
-R8
 R23
 R24
+R25
 !i113 1
 R11
 R12
 Atrivial
-Z34 DEx4 work 6 memory 0 22 D[jS@4mENEXi]>_jPFlYi0
-Z35 DEx4 work 8 prog_reg 0 22 [<Aof8C3GPLb=MlFaG55f2
+Z33 DEx4 work 6 memory 0 22 D[jS@4mENEXi]>_jPFlYi0
+Z34 DEx4 work 8 prog_reg 0 22 [<Aof8C3GPLb=MlFaG55f2
 R13
-Z36 DEx4 work 9 extender8 0 22 o`dMdHV^Tj@IE2[mIj;?N1
-Z37 DEx4 work 9 lshifter7 0 22 PMk]=O9gVSB1QcQ0]cLSl2
-Z38 DEx4 work 12 decoder_3to8 0 22 e[`X9hO;6cSoROc`ILVVc1
-Z39 DEx4 work 8 priority 0 22 Uc1]N7aF96oU5DjkLZbFl0
-Z40 DEx4 work 8 flag_reg 0 22 V:kgOahBNVQ@H@UQH9]]R1
-Z41 DEx4 work 9 temp_reg3 0 22 QV>DJl9MPnDf72`gn=i[50
-Z42 DEx4 work 5 t_reg 0 22 UDoPXonb1jZCW2c?b6[@`1
-R25
-Z43 DEx4 work 6 t1_reg 0 22 ecTc[C:DNW^2`49LR^GAh2
+Z35 DEx4 work 9 extender8 0 22 o`dMdHV^Tj@IE2[mIj;?N1
+Z36 DEx4 work 9 lshifter7 0 22 PMk]=O9gVSB1QcQ0]cLSl2
+Z37 DEx4 work 12 decoder_3to8 0 22 e[`X9hO;6cSoROc`ILVVc1
+Z38 DEx4 work 8 priority 0 22 Uc1]N7aF96oU5DjkLZbFl0
+Z39 DEx4 work 8 flag_reg 0 22 V:kgOahBNVQ@H@UQH9]]R1
+Z40 DEx4 work 9 temp_reg3 0 22 QV>DJl9MPnDf72`gn=i[50
+Z41 DEx4 work 5 t_reg 0 22 UDoPXonb1jZCW2c?b6[@`1
+R26
+Z42 DEx4 work 6 t1_reg 0 22 ecTc[C:DNW^2`49LR^GAh2
 R20
 R2
 R3
-R27
+R28
 !i122 2
 l253
-L192 486
-V8HY][N=If2d0N:PaCB@9E3
-!s100 SV>27MC@c>h:liI<8^U961
+L192 487
+V]UL00Y685UbW3XLclgYFJ1
+!s100 g;NdmVmdc[]F]ngiB2Nk92
 R6
 31
 R7
 !i10b 1
-R8
 R23
 R24
+R25
 !i113 1
 R11
 R12
@@ -321,7 +321,7 @@ R12
 Adec
 R2
 R3
-R38
+R37
 !i122 1
 l453
 L452 14
@@ -339,7 +339,7 @@ R11
 R12
 Edemux_4
 R1
-Z44 DPx4 work 5 gates 0 22 no>`P0Z__NEHSho?e5lEY0
+Z43 DPx4 work 5 gates 0 22 no>`P0Z__NEHSho?e5lEY0
 R2
 R3
 !i122 1
@@ -361,7 +361,7 @@ R10
 R11
 R12
 Astruct
-R44
+R43
 R2
 R3
 DEx4 work 7 demux_4 0 22 dMb[<H5UegjMfC8Xm>lBW2
@@ -382,7 +382,7 @@ R11
 R12
 Eextender8
 R1
-R25
+R26
 R2
 R3
 !i122 1
@@ -404,10 +404,10 @@ R10
 R11
 R12
 Asidehojana
-R25
+R26
 R2
 R3
-R36
+R35
 !i122 1
 l498
 L497 5
@@ -425,7 +425,7 @@ R11
 R12
 Eflag_reg
 R1
-R25
+R26
 R2
 R3
 !i122 1
@@ -438,7 +438,7 @@ VV:kgOahBNVQ@H@UQH9]]R1
 !s100 ]FgF[:S80VjR8LmTc0;5]0
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R9
@@ -447,10 +447,10 @@ R10
 R11
 R12
 Abhv
-R25
+R26
 R2
 R3
-R40
+R39
 !i122 1
 l178
 L176 19
@@ -458,7 +458,7 @@ VH`IgCm_X:4P01mWSEWYj:0
 !s100 No`4KkDJEXI8^08MLWb1:2
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R9
@@ -468,7 +468,7 @@ R11
 R12
 Efsm
 R19
-R25
+R26
 R2
 R3
 !i122 2
@@ -483,17 +483,17 @@ R6
 31
 R7
 !i10b 1
-R8
 R23
 R24
+R25
 !i113 1
 R11
 R12
 Ashatranj
-R25
+R26
 R2
 R3
-R26
+R27
 !i122 2
 l41
 L17 160
@@ -503,9 +503,9 @@ R6
 31
 R7
 !i10b 1
-R8
 R23
 R24
+R25
 !i113 1
 R11
 R12
@@ -513,17 +513,17 @@ Pgates
 R2
 R3
 !i122 0
-R14
+R1
 R0
+R14
 R15
-R16
 l0
 L7 1
 Vno>`P0Z__NEHSho?e5lEY0
 !s100 nIDG6m>>WcaA3DZDRDUzz2
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -532,20 +532,20 @@ R18
 R11
 R12
 Ehalf_adder
-R14
+R1
 R2
 R3
 !i122 0
 R0
+R14
 R15
-R16
 l0
 L125 1
 V2aO9V^NCSmmmfE7U_WlN92
 !s100 JJWN<W29hXcU?T6mZLe<V3
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -564,7 +564,7 @@ VOPjL5zY;;[@[OYne?@WzV0
 !s100 R^Nd=0I?fHEmOMnJ1OEOE3
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -573,20 +573,20 @@ R18
 R11
 R12
 Einverter
-R14
+R1
 R2
 R3
 !i122 0
 R0
+R14
 R15
-R16
 l0
 L46 1
 V`nU55j8?X5j?F6V7eJAZc2
 !s100 d2R=F2dS<=`Fj6mn2Cj;V2
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -605,7 +605,7 @@ VAVOYfYen36DY;X[FT94XI0
 !s100 14aXV^eX5KQXjG=3V3LXN0
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -615,7 +615,7 @@ R11
 R12
 Elshifter7
 R1
-R25
+R26
 R2
 R3
 !i122 1
@@ -637,10 +637,10 @@ R10
 R11
 R12
 Asidehoja
-R25
+R26
 R2
 R3
-R37
+R36
 !i122 1
 l480
 L479 5
@@ -658,7 +658,7 @@ R11
 R12
 Ememory
 R1
-R25
+R26
 R2
 R3
 !i122 1
@@ -680,15 +680,15 @@ R10
 R11
 R12
 Amemorykakaam
-R25
+R26
 R2
 R3
-R34
+R33
 !i122 1
-l545
-L536 40
-VNlfh?5]2EniYgZoLmjBmA0
-!s100 8MKO>67EibIfhT_4?CSm53
+l549
+L536 44
+VMd;FMN72aClKk]i<fZ@;11
+!s100 JAA0VOKiPFBj88XOHUebk2
 R6
 31
 R7
@@ -700,20 +700,20 @@ R10
 R11
 R12
 Enand_2
-R14
+R1
 R2
 R3
 !i122 0
 R0
+R14
 R15
-R16
 l0
 L69 1
 V4M4Q>BNfaY2gEX0@T>mgC1
 !s100 GXD7og>AAe?coIU>ef8?33
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -732,7 +732,7 @@ VPm75`0P3KkXz`KWESgcS>2
 !s100 FG;XFOXMK0>N_cdA;?kie1
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -741,20 +741,20 @@ R18
 R11
 R12
 Enor_2
-R14
+R1
 R2
 R3
 !i122 0
 R0
+R14
 R15
-R16
 l0
 L91 1
 VTCX[Ok0LFNj]cJDQE@V8`0
 !s100 KenEBZW?b[c^:ZMCoZ]IR1
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -773,7 +773,7 @@ VfW]Un`GTkBnNZmWYPC<Qm3
 !s100 U:^g=5keQPm8YkS;ae]8c2
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -782,20 +782,20 @@ R18
 R11
 R12
 Eor_2
-R14
+R1
 R2
 R3
 !i122 0
 R0
+R14
 R15
-R16
 l0
 L80 1
 VcI<CkMH0V6BPhEADZ3cad0
 !s100 e7LT`cXUgiPeR_T?_OL`>0
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -814,7 +814,7 @@ VV;m9L46]aY<aM3cMGcKl:3
 !s100 amc1l1BMM0c2KBYbZ0:Vk0
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -847,7 +847,7 @@ R12
 Abhv
 R2
 R3
-R39
+R38
 !i122 1
 l435
 L432 10
@@ -865,7 +865,7 @@ R11
 R12
 Eprog_reg
 R1
-R25
+R26
 R2
 R3
 !i122 1
@@ -887,15 +887,15 @@ R10
 R11
 R12
 Apr
-R25
+R26
 R2
 R3
-R35
+R34
 !i122 1
 l406
 L347 75
-VL6=ml;j>[0QFi;8RM6?>31
-!s100 Ym`YhJZdC=cg^]GU1IZ0R1
+Vn2l2=BgbkGdb0WdGRgDh31
+!s100 HWLXb?1On4LFg72E6GCAW0
 R6
 31
 R7
@@ -949,7 +949,7 @@ R11
 R12
 Et1_reg
 R1
-R25
+R26
 R2
 R3
 !i122 1
@@ -971,10 +971,10 @@ R10
 R11
 R12
 Abhv
-R25
+R26
 R2
 R3
-R43
+R42
 !i122 1
 l308
 L304 26
@@ -992,7 +992,7 @@ R11
 R12
 Et_reg
 R1
-R25
+R26
 R2
 R3
 !i122 1
@@ -1005,7 +1005,7 @@ VUDoPXonb1jZCW2c?b6[@`1
 !s100 ?e7deHQO^h]OJ;iiKWMEz3
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R9
@@ -1014,10 +1014,10 @@ R10
 R11
 R12
 Abhv
-R25
+R26
 R2
 R3
-R42
+R41
 !i122 1
 l153
 L151 13
@@ -1025,7 +1025,7 @@ Vzd4`hLSUAnMk:<_NXa7d93
 !s100 hI=?klnad<AeD4gJf5n1B1
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R9
@@ -1035,7 +1035,7 @@ R11
 R12
 Etemp_reg3
 R1
-R25
+R26
 R2
 R3
 !i122 1
@@ -1048,7 +1048,7 @@ VQV>DJl9MPnDf72`gn=i[50
 !s100 P^h^Z;aMBLh[4GV;l?]mh0
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R9
@@ -1057,10 +1057,10 @@ R10
 R11
 R12
 Abhv
-R25
+R26
 R2
 R3
-R41
+R40
 !i122 1
 l128
 L126 13
@@ -1068,7 +1068,7 @@ V3Vn_d[M4IOVRHR:YQ7P=c1
 !s100 =FB15;eT98SM]P6KJ4>LQ1
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R9
@@ -1077,20 +1077,20 @@ R10
 R11
 R12
 Exnor_2
-R14
+R1
 R2
 R3
 !i122 0
 R0
+R14
 R15
-R16
 l0
 L114 1
 V`]4C0<h_h42HE0`j_oh:02
 !s100 b=`MVk]zeWBUXbcE<8LeL2
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -1109,7 +1109,7 @@ V^Y6Xd`:5NZe2_Om0m^Znh1
 !s100 gZo<BjVzYC7mN:Z@ZfR6B0
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -1118,20 +1118,20 @@ R18
 R11
 R12
 Exor_2
-R14
+R1
 R2
 R3
 !i122 0
 R0
+R14
 R15
-R16
 l0
 L103 1
 V3?k8R>0LH_3f5I8=fQaTI3
 !s100 aYOl=d93a=e^kZPYAzWO03
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17
@@ -1150,7 +1150,7 @@ VF]akO]fH85S2c6[URSjGm2
 !s100 aJ]mCVB5h@[d^U42WKS943
 R6
 31
-R7
+R16
 !i10b 1
 R8
 R17

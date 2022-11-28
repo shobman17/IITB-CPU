@@ -7,7 +7,7 @@ use ieee.numeric_std.all;
 
 entity FSM is 
 	port( opcode:in std_logic_vector(3 downto 0);
-			t1_70:in std_logic_vector(7 downto 0);
+			alu_out_70:in std_logic_vector(7 downto 0);
 			c_i, z_i, z_in, c_out, z_out:in std_logic;
 			clk:in std_logic;
 			output_state: out std_logic_vector(3 downto 0)
@@ -50,7 +50,7 @@ begin
 			
 	end process;
 
-	next_state:process(y_present,opcode, c_i, z_i, c_out, z_out, z_in, t1_70)
+	next_state:process(y_present,opcode, c_i, z_i, c_out, z_out, z_in, alu_out_70)
    begin
 		case y_present is
 		
@@ -83,7 +83,7 @@ begin
 					when "0110" => --lm
 						y_next<=s13;
 					when "0111" => --sm
-						y_next<=s14;
+						y_next<=s15;
 					when others =>
 						y_next <= s1;
 				end case;			
@@ -150,13 +150,13 @@ begin
 			when s14=> 
 				case opcode is
 					when "0110" =>  --lm
-						if (t1_70 = "00000000") then
+						if (alu_out_70 = "00000000") then
 							y_next<=s1;
 						else 
 							y_next<=s13;
 						end if;
-					when "0111" =>  --lm
-						if (t1_70 = "00000000") then
+					when "0111" =>  --sm
+						if (alu_out_70 = "00000000") then
 							y_next<=s1;
 						else 
 							y_next<=s15;
@@ -186,7 +186,7 @@ entity DataPath is
 	port(clk: in std_logic; state: in std_logic_vector(3 downto 0); 
 		out_c_i, out_z_i, out_z_in, out_c_out, out_z_out: out std_logic;
 			opcode: out std_logic_vector(3 downto 0);
-			t17downto0: out std_logic_vector(7 downto 0));
+			alu_out_70: out std_logic_vector(7 downto 0));
 end entity Datapath;
 
 architecture trivial of DataPath is
@@ -697,7 +697,7 @@ architecture trivial of DataPath is
 			end case;
 		end process;
 		
-		t17downto0<=s1_3;
+		alu_out_70<=alu_out(7 downto 0);
 		out_c_out<=c_out;
 		out_z_in<=z_in;
 		out_z_out<=z_out;
@@ -719,7 +719,7 @@ end entity;
 architecture completete of CPU is
 	component FSM is 
 		port( opcode:in std_logic_vector(3 downto 0);
-				t1_70:in std_logic_vector(7 downto 0);
+				alu_out_70:in std_logic_vector(7 downto 0);
 				c_i, z_i, z_in, c_out, z_out:in std_logic;
 				clk:in std_logic;
 				output_state: out std_logic_vector(3 downto 0)
@@ -730,7 +730,7 @@ architecture completete of CPU is
 		port(clk: in std_logic; state: in std_logic_vector(3 downto 0); 
 			out_c_i, out_z_i,out_z_in, out_c_out, out_z_out: out std_logic;
 				opcode: out std_logic_vector(3 downto 0);
-				t17downto0: out std_logic_vector(7 downto 0));
+				alu_out_70: out std_logic_vector(7 downto 0));
 	end component Datapath;
 	
 	for all: Datapath
@@ -739,14 +739,14 @@ architecture completete of CPU is
 	for all: FSM
 		use entity work.FSM(shatranj);
 	
-	signal t17downto0: std_logic_vector(7 downto 0);
+	signal alu_out_70: std_logic_vector(7 downto 0);
 	signal state, opcode: std_logic_vector(3 downto 0);
 	signal c_i, z_i, z_in, c_out, z_out: std_logic;
 	
 	begin
 		Main_Data: component Datapath
-			port map(clk, state, c_i, z_i, z_in, c_out, z_out, opcode, t17downto0);
+			port map(clk, state, c_i, z_i, z_in, c_out, z_out, opcode, alu_out_70);
 			
 		Main_FSM: component FSM
-			port map(opcode, t17downto0, c_i, z_i, z_in, c_out, z_out, clk, state);
+			port map(opcode, alu_out_70, c_i, z_i, z_in, c_out, z_out, clk, state);
 end architecture;

@@ -5,11 +5,11 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vcom -93 -work work {C:/Users/aryav/Desktop/IITB-CPU/CPU/Gates.vhdl}
-vcom -93 -work work {C:/Users/aryav/Desktop/IITB-CPU/CPU/Components.vhd}
-vcom -93 -work work {C:/Users/aryav/Desktop/IITB-CPU/CPU/CPU.vhd}
+vcom -93 -work work {C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Gates.vhdl}
+vcom -93 -work work {C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd}
+vcom -93 -work work {C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd}
 
-vcom -93 -work work {C:/Users/aryav/Desktop/IITB-CPU/CPU/CPU_tb.vhd}
+vcom -93 -work work {C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU_tb.vhd}
 
 vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  CPU_tb
 

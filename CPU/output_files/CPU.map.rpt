@@ -1,5 +1,5 @@
-Analysis & Elaboration report for CPU
-Mon Nov 28 19:22:00 2022
+Analysis & Synthesis report for CPU
+Tue Nov 29 12:21:28 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -7,10 +7,16 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -35,45 +41,29 @@ https://fpgasoftware.intel.com/eula.
 
 
 +----------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                   ;
+; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Elaboration Status      ; Successful - Mon Nov 28 19:22:00 2022       ;
+; Analysis & Synthesis Status        ; Successful - Tue Nov 29 12:21:28 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; CPU                                         ;
 ; Top-level Entity Name              ; CPU                                         ;
 ; Family                             ; MAX 10                                      ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-; UFM blocks                         ; N/A until Partition Merge                   ;
-; ADC blocks                         ; N/A until Partition Merge                   ;
+; Total logic elements               ; 0                                           ;
+;     Total combinational functions  ; 0                                           ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 1                                           ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0                                           ;
+; Embedded Multiplier 9-bit elements ; 0                                           ;
+; Total PLLs                         ; 0                                           ;
+; UFM blocks                         ; 0                                           ;
+; ADC blocks                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
 +------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                            ;
+; Analysis & Synthesis Settings                                                                              ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
@@ -158,14 +148,118 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; Gates.vhdl                       ; yes             ; User VHDL File  ; C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Gates.vhdl     ;         ;
+; Components.vhd                   ; yes             ; User VHDL File  ; C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd ;         ;
+; CPU.vhd                          ; yes             ; User VHDL File  ; C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd        ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+;                                             ;       ;
+; Total combinational functions               ; 0     ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- <=2 input functions                  ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+;     -- Dedicated logic registers            ; 0     ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+;                                             ;       ;
+; Embedded Multiplier 9-bit elements          ; 0     ;
+;                                             ;       ;
+; Maximum fan-out node                        ; clk   ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 1     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+; |CPU                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 1    ; 0            ; 0          ; |CPU                ; CPU         ; work         ;
++----------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+---------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-------------------+---------------------------------+
+; Type              ; Count                           ;
++-------------------+---------------------------------+
+; boundary_port     ; 1                               ;
+;                   ;                                 ;
+; Max LUT depth     ; 0.00                            ;
+; Average LUT depth ; 0.00                            ;
++-------------------+---------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
+Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 28 19:21:46 2022
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU --analysis_and_elaboration
+    Info: Processing started: Tue Nov 29 12:21:12 2022
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CPU -c CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 17 design units, including 8 entities, in source file gates.vhdl
@@ -196,12 +290,12 @@ Info (12021): Found 29 design units, including 14 entities, in source file compo
     Info (12022): Found design unit 7: ALU-addsubnand File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 261
     Info (12022): Found design unit 8: T1_reg-bhv File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 304
     Info (12022): Found design unit 9: prog_reg-pr File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 347
-    Info (12022): Found design unit 10: Priority-bhv File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 432
-    Info (12022): Found design unit 11: decoder_3to8-dec File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 455
-    Info (12022): Found design unit 12: Lshifter7-sidehoja File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 482
-    Info (12022): Found design unit 13: extender8-sidehojana File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 500
-    Info (12022): Found design unit 14: signed_extender-ext File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 514
-    Info (12022): Found design unit 15: Memory-memorykakaam File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 539
+    Info (12022): Found design unit 10: Priority-bhv File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 435
+    Info (12022): Found design unit 11: decoder_3to8-dec File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 458
+    Info (12022): Found design unit 12: Lshifter7-sidehoja File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 485
+    Info (12022): Found design unit 13: extender8-sidehojana File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 503
+    Info (12022): Found design unit 14: signed_extender-ext File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 517
+    Info (12022): Found design unit 15: Memory-memorykakaam File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 542
     Info (12023): Found entity 1: Temp_reg3 File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 120
     Info (12023): Found entity 2: T_reg File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 145
     Info (12023): Found entity 3: flag_reg File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 170
@@ -210,12 +304,12 @@ Info (12021): Found 29 design units, including 14 entities, in source file compo
     Info (12023): Found entity 6: ALU File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 253
     Info (12023): Found entity 7: T1_reg File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 292
     Info (12023): Found entity 8: prog_reg File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 336
-    Info (12023): Found entity 9: Priority File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 426
-    Info (12023): Found entity 10: decoder_3to8 File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 450
-    Info (12023): Found entity 11: Lshifter7 File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 477
-    Info (12023): Found entity 12: extender8 File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 495
-    Info (12023): Found entity 13: signed_extender File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 509
-    Info (12023): Found entity 14: Memory File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 531
+    Info (12023): Found entity 9: Priority File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 429
+    Info (12023): Found entity 10: decoder_3to8 File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 453
+    Info (12023): Found entity 11: Lshifter7 File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 480
+    Info (12023): Found entity 12: extender8 File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 498
+    Info (12023): Found entity 13: signed_extender File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 512
+    Info (12023): Found entity 14: Memory File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 534
 Info (12021): Found 6 design units, including 3 entities, in source file cpu.vhd
     Info (12022): Found design unit 1: FSM-shatranj File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 17
     Info (12022): Found design unit 2: DataPath-trivial File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 192
@@ -429,39 +523,46 @@ Warning (10492): VHDL Process Statement warning at Components.vhd(186): signal "
 Warning (10492): VHDL Process Statement warning at Components.vhd(188): signal "z_enable" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 188
 Warning (10492): VHDL Process Statement warning at Components.vhd(191): signal "storage" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 191
 Info (12129): Elaborating entity "prog_reg" using architecture "A:pr" for hierarchy "DataPath:Main_Data|prog_reg:reg_file" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 279
-Warning (10492): VHDL Process Statement warning at Components.vhd(410): signal "prog_storage" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 410
-Warning (10492): VHDL Process Statement warning at Components.vhd(411): signal "prog_storage" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 411
+Warning (10492): VHDL Process Statement warning at Components.vhd(413): signal "prog_storage" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 413
+Warning (10492): VHDL Process Statement warning at Components.vhd(414): signal "prog_storage" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 414
 Info (12129): Elaborating entity "Priority" using architecture "A:bhv" for hierarchy "DataPath:Main_Data|Priority:priori_enc" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 283
 Info (12129): Elaborating entity "decoder_3to8" using architecture "A:dec" for hierarchy "DataPath:Main_Data|decoder_3to8:decoder" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 286
 Info (12129): Elaborating entity "extender8" using architecture "A:sidehojana" for hierarchy "DataPath:Main_Data|extender8:e8" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 289
 Info (12129): Elaborating entity "Lshifter7" using architecture "A:sidehoja" for hierarchy "DataPath:Main_Data|Lshifter7:lshift7" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 292
 Info (12128): Elaborating entity "signed_extender" for hierarchy "DataPath:Main_Data|signed_extender:se6" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 295
 Info (12129): Elaborating entity "Memory" using architecture "A:memorykakaam" for hierarchy "DataPath:Main_Data|Memory:mem" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 298
-Warning (10492): VHDL Process Statement warning at Components.vhd(569): signal "memorykagyaan" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 569
-Warning (10631): VHDL Process Statement warning at Components.vhd(566): inferring latch(es) for signal or variable "mem_out", which holds its previous value in one or more paths through the process File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[0]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[1]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[2]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[3]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[4]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[5]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[6]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[7]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[8]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[9]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[10]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[11]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[12]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[13]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[14]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
-Info (10041): Inferred latch for "mem_out[15]" at Components.vhd(566) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 566
+Warning (10492): VHDL Process Statement warning at Components.vhd(575): signal "memorykagyaan" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 575
+Warning (10631): VHDL Process Statement warning at Components.vhd(572): inferring latch(es) for signal or variable "mem_out", which holds its previous value in one or more paths through the process File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[0]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[1]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[2]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[3]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[4]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[5]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[6]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[7]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[8]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[9]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[10]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[11]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[12]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[13]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[14]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
+Info (10041): Inferred latch for "mem_out[15]" at Components.vhd(572) File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 572
 Info (12129): Elaborating entity "ALU" using architecture "A:addsubnand" for hierarchy "DataPath:Main_Data|ALU:alu_comp" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 301
 Info (12128): Elaborating entity "ALU_unit_cell" for hierarchy "DataPath:Main_Data|ALU:alu_comp|ALU_unit_cell:\unit_cell_generate:0:unit" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd Line: 277
 Info (12129): Elaborating entity "FSM" using architecture "A:shatranj" for hierarchy "FSM:Main_FSM" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 750
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4780 megabytes
-    Info: Processing ended: Mon Nov 28 19:22:01 2022
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:36
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd Line: 716
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 4786 megabytes
+    Info: Processing ended: Tue Nov 29 12:21:28 2022
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:39
 
 

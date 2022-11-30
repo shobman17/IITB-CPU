@@ -401,7 +401,10 @@ architecture pr of prog_reg is --unfortunately, for testing purposes, I had to r
 --				r7 when others;
 --end pr;
 	type reg_array is array(7 downto 0) of std_logic_vector(15 downto 0);
-		signal prog_storage : reg_array := (1 => "0000000000100000", others => "0000000000000000");  
+		--R1 is initialised to "1111000000000000"
+		--R2 is initialised to "1111000000000000"
+		--R3 is initialised to "1000000000000000"
+		signal prog_storage : reg_array := (1 => "1111000000000000", 2=> "1111000000000000",3=>"1000000000000000",others => "0000000000000000");  
 	
 begin
 	
@@ -538,13 +541,16 @@ end entity;
 
 architecture memorykakaam of Memory is 
 		type mem_vec is array(65535 downto 0) of std_logic_vector(15 downto 0);
-		signal memorykagyaan : mem_vec := (0=> "0110001001111111",1=> "0111010011111111", 32=>"0000000000000000", 33=>"1000000000000000", 34 =>"0000000001000000", 35=>"1110000000000000", 36 => "1111000000000000", 37 =>"1111100000000000", 38 =>"1111110000000000", others => "0000000000000000");  
-		--R1 has been initialised with address 32 ("0000000000100000")
-		--0 has LM R1 0 01111111
-		--After LM, R2 now has address 64 ("0000000001000000")
-		--1 has SM R2 0 11111111
-
-
+		signal memorykagyaan : mem_vec := (0=> "1100001010010000",16 => "1100010011100101", 17=>"0001001100001111", 18=>"1000101000011100", 46=>"1001110101000000", others => "0000000000000000");  
+		--R1 is initialised to "1111000000000000"
+		--R2 is initialised to "1111000000000000"
+		--R3 is initialised to "1000000000000000"
+		--0 has BEQ 001 010 010000
+		--16 has BEQ 010 011 100101
+		--17 has ADI 001 100 001111
+		--18 has JAL 101 000011100
+		--46 has JLR 110 101 000000
+		 
 begin
 
 --	process(clk)

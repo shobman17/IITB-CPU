@@ -395,7 +395,7 @@ architecture trivial of DataPath is
 					z_en<=(not s1_4(3)) and (not s1_4(2)) and (not(s1_4(1) and s1_4(0)));
 					c_en<=(not s1_4(3)) and (not s1_4(2)) and (not s1_4(1));
 					--alu_ctrl<=(1=>s1_4(3) and s1_4(2), 0=>((not s1_4(3)) and (not s1_4(2)) and s1_4(1) and (not s1_4(0))) or (s1_4(3) and s1_4(2)));
-					alu_ctrl <= (1=>((not s1_4(3)) and (not s1_4(2)) and s1_4(1) and (not s1_4(0))) or (s1_4(3) and s1_4(2)), 0=>s1_4(3) and s1_4(2));
+					alu_ctrl <= (1=>not(s1_4(3)) and not(s1_4(2)) and s1_4(1) and not(s1_4(0)), 0=>s1_4(3) and s1_4(2));
 					
 				when state4 =>
 					--Data Flow

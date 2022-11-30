@@ -10,10 +10,10 @@
 # Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Gates.vhdl}
+# vcom -93 -work work {C:/Users/aryav/Desktop/IITB-CPU/CPU/Gates.vhdl}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:22:30 on Nov 29,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Gates.vhdl 
+# Start time: 21:07:53 on Nov 30,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/IITB-CPU/CPU/Gates.vhdl 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -34,12 +34,12 @@
 # -- Compiling architecture Equations of XNOR_2
 # -- Compiling entity HALF_ADDER
 # -- Compiling architecture Equations of HALF_ADDER
-# End time: 12:22:30 on Nov 29,2022, Elapsed time: 0:00:00
+# End time: 21:07:53 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd}
+# vcom -93 -work work {C:/Users/aryav/Desktop/IITB-CPU/CPU/Components.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:22:30 on Nov 29,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/Components.vhd 
+# Start time: 21:07:53 on Nov 30,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/IITB-CPU/CPU/Components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -74,12 +74,12 @@
 # -- Compiling architecture ext of signed_extender
 # -- Compiling entity Memory
 # -- Compiling architecture memorykakaam of Memory
-# End time: 12:22:31 on Nov 29,2022, Elapsed time: 0:00:01
+# End time: 21:07:54 on Nov 30,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd}
+# vcom -93 -work work {C:/Users/aryav/Desktop/IITB-CPU/CPU/CPU.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:22:31 on Nov 29,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU.vhd 
+# Start time: 21:07:54 on Nov 30,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/IITB-CPU/CPU/CPU.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
@@ -104,24 +104,24 @@
 # -- Compiling architecture completete of CPU
 # -- Loading entity DataPath
 # -- Loading entity FSM
-# End time: 12:22:31 on Nov 29,2022, Elapsed time: 0:00:00
+# End time: 21:07:54 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vcom -93 -work work {C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU_tb.vhd}
+# vcom -93 -work work {C:/Users/aryav/Desktop/IITB-CPU/CPU/CPU_tb.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 12:22:32 on Nov 29,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/shobh/OneDrive/Desktop/Course folders/EE224/IITB-CPU/CPU/CPU_tb.vhd 
+# Start time: 21:07:54 on Nov 30,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/aryav/Desktop/IITB-CPU/CPU/CPU_tb.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity CPU_tb
 # -- Compiling architecture bhv of CPU_tb
-# End time: 12:22:32 on Nov 29,2022, Elapsed time: 0:00:00
+# End time: 21:07:54 on Nov 30,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  CPU_tb
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" CPU_tb 
-# Start time: 12:22:32 on Nov 29,2022
+# Start time: 21:07:54 on Nov 30,2022
 # Loading std.standard
 # Loading std.textio(body)
 # Loading ieee.std_logic_1164(body)
@@ -148,23 +148,51 @@
 # add wave *
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: aryav  Hostname: CERIUM  ProcessID: 23416
-#           Attempting to use alternate WLF file "./wlftik536t".
+#           Attempting to use alternate WLF file "./wlft9bw4hq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftik536t
+#           Using alternate file: ./wlft9bw4hq
 # view structure
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
+add wave -position end sim:/cpu_tb/dut_instance/Main_Data/reg_file/*
 add wave -position end  sim:/cpu_tb/dut_instance/Main_Data/reg_file/prog_storage
-add wave -position end  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_A
-add wave -position end  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_B
-add wave -position end  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_SELECT
-add wave -position end  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_C
-add wave -position 1  sim:/cpu_tb/dut_instance/Main_FSM/opcode
-add wave -position 2  sim:/cpu_tb/dut_instance/Main_FSM/y_present
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 run
-# End time: 13:12:20 on Nov 29,2022, Elapsed time: 0:49:48
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position 1  sim:/cpu_tb/dut_instance/Main_Data/T1/storage
+add wave -position 1  sim:/cpu_tb/dut_instance/Main_FSM/y_present
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position 5  sim:/cpu_tb/dut_instance/Main_Data/mem/mem_addr
+add wave -position 6  sim:/cpu_tb/dut_instance/Main_Data/mem/mem_in
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position 8  sim:/cpu_tb/dut_instance/Main_Data/mem/mem_out
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+add wave -position 5  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_C
+add wave -position 5  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_SELECT
+add wave -position 5  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_B
+add wave -position 5  sim:/cpu_tb/dut_instance/Main_Data/alu_comp/ALU_A
+run
+restart
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# End time: 21:35:26 on Nov 30,2022, Elapsed time: 0:27:32
 # Errors: 0, Warnings: 0

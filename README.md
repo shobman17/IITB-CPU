@@ -2,6 +2,12 @@
 
 Course project for EE224: Digital Design
 
+## Members:
+- Abhiruchi Kotamkar (210070043)
+- Arya Vishe (21d070018)
+- Shobhit Maheshwari (210070081)
+- Shlesh Golap (210070080)
+
 ## How to run
 
 - Navigate to the CPU folder
